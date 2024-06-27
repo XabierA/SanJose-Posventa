@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".RevisionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.23"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:src="@drawable/san_jose_logo"
+            android:scaleType="fitStart"/>
+
+        <ImageView
+            android:id="@+id/remoteeye_rev"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/remoteeye_icon4"
+            android:scaleType="fitEnd"
+            android:clickable="true"
+            android:contentDescription="hf_commands:remote eye|hf_show_text"/>
+
+        <ImageView
+            android:id="@+id/zoom_rev"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.45"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/zoom_icon"
+            android:scaleType="fitEnd"
+            android:clickable="true"
+            android:contentDescription="hf_commands:zoom|hf_show_text"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:paddingLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Disciplina :"
+                    android:textColor="@color/black"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/rev_disciplina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="4dp"
+                    android:text="Electricidad"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.1"
+                    android:paddingLeft="17dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Descripción :"
+                    android:textColor="@color/black"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/rev_descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:text="Electricidad"
+                    android:paddingBottom="1dp"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.1"
+                    android:paddingLeft="17dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Complemento1 :"
+                    android:textColor="@color/black"
+                    android:textSize="29dp" />
+
+                <TextView
+                    android:id="@+id/rev_complemento1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:text="Electricidad"
+                    android:paddingBottom="1dp"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.1"
+                    android:paddingLeft="17dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Complemento2 :"
+                    android:textColor="@color/black"
+                    android:textSize="29dp" />
+
+                <TextView
+                    android:id="@+id/rev_complemento2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:text="Electricidad"
+                    android:paddingBottom="1dp"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.widget.Button
+                    android:id="@+id/btnAudios_rev"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/custom_doc_btn"
+                    android:text="Audios"
+                    android:textAllCaps="false"
+                    android:textSize="18dp" />
+
+                <android.widget.Button
+                    android:id="@+id/btnFotos_rev"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/custom_doc_btn"
+                    android:text="Fotos"
+                    android:textAllCaps="false"
+                    android:textSize="18dp" />
+
+                <android.widget.Button
+                    android:id="@+id/btnVideos_rev"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/custom_doc_btn"
+                    android:text="Videos"
+                    android:textAllCaps="false"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.23"
+        android:background="@color/gray">
+
+        <android.widget.Button
+            android:id="@+id/btnEditar_rev"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Editar"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:clickable="false"
+            android:background="@null"/>
+
+        <android.widget.Button
+            android:id="@+id/btnGuardar_rev"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:clickable="false"
+            android:background="@null"/>
+
+        <android.widget.Button
+            android:id="@+id/btnEnviar_rev"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Enviar"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

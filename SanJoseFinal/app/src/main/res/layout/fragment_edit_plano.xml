@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPlanoFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="110dp"
+                android:src="@drawable/san_jose_logo"/>
+
+            <android.widget.Button
+                android:id="@+id/btnSeñalarPlano"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="110dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="señalar"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/custom_doc_btn"
+                android:textAllCaps="false"
+                android:clickable="false"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/planofinal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginBottom="117dp"
+                android:src="@drawable/remoteeye_icon4"/>
+
+            <android.widget.Button
+                android:id="@+id/btnGuardarPlano"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="110dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="guardar"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/custom_doc_btn"
+                android:textAllCaps="false"
+                android:clickable="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@color/gray">
+
+        <android.widget.Button
+            android:id="@+id/btnAnterior_EditP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Anterior"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:clickable="false"
+            android:background="@null"/>
+
+        <android.widget.Button
+            android:id="@+id/btnSiguiente_EditP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Siguiente"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@null"/>
+    </LinearLayout>
+</LinearLayout>
