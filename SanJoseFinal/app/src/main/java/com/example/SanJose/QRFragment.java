@@ -124,7 +124,7 @@ public class QRFragment extends Fragment {
     }
 
     public void checkProyect(String id){
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://eu-west-2.aws.data.mongodb-api.com/app/apisanjose-iciuj/endpoint/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("URL DE LA API")
                 .addConverterFactory(GsonConverterFactory.create()).build();
         QRFragment.GetProyecto getProyecto = retrofit.create(QRFragment.GetProyecto.class);
 

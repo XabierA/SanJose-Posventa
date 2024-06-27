@@ -86,7 +86,7 @@ public class ElegirGruposEmailFragment extends Fragment {
         btnCarpinteros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Retrofit retrofit = new Retrofit.Builder().baseUrl("https://eu-west-2.aws.data.mongodb-api.com/app/apisanjose-iciuj/endpoint/")
+                Retrofit retrofit = new Retrofit.Builder().baseUrl("URL DE LA API")
                         .addConverterFactory(GsonConverterFactory.create()).build();
 
                 ElegirGruposEmailFragment.GetEmails requestEmails = retrofit.create(ElegirGruposEmailFragment.GetEmails.class);
@@ -97,11 +97,9 @@ public class ElegirGruposEmailFragment extends Fragment {
                         List<Email> apiResponse = response.body();
                         emails = apiResponse;
                         try {
-                            Log.v("emails", emails.get(0).email);
                             GMailSender sender = new GMailSender("testemailsenderapp@gmail.com", "jmdpwgebudgzfiom", emails);
                             sender.execute();
                         } catch (Exception e) {
-                            Log.e("SendMail", e.getMessage(), e);
                         }
                     }
                     @Override
@@ -125,7 +123,7 @@ public class ElegirGruposEmailFragment extends Fragment {
         btnElectricistas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Retrofit retrofit = new Retrofit.Builder().baseUrl("https://eu-west-2.aws.data.mongodb-api.com/app/apisanjose-iciuj/endpoint/")
+                Retrofit retrofit = new Retrofit.Builder().baseUrl("URL DE LA API")
                         .addConverterFactory(GsonConverterFactory.create()).build();
 
                 ElegirGruposEmailFragment.GetEmails requestEmails = retrofit.create(ElegirGruposEmailFragment.GetEmails.class);
@@ -136,11 +134,10 @@ public class ElegirGruposEmailFragment extends Fragment {
                         List<Email> apiResponse = response.body();
                         emails = apiResponse;
                         try {
-                            Log.v("emails", emails.get(0).email);
                             GMailSender sender = new GMailSender("testemailsenderapp@gmail.com", "jmdpwgebudgzfiom", emails);
                             sender.execute();
                         } catch (Exception e) {
-                            Log.e("SendMail", e.getMessage(), e);
+
                         }
                     }
                     @Override
@@ -163,7 +160,7 @@ public class ElegirGruposEmailFragment extends Fragment {
         btnEncofradores.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Retrofit retrofit = new Retrofit.Builder().baseUrl("https://eu-west-2.aws.data.mongodb-api.com/app/apisanjose-iciuj/endpoint/")
+                Retrofit retrofit = new Retrofit.Builder().baseUrl("URL DE LA API")
                         .addConverterFactory(GsonConverterFactory.create()).build();
 
                 ElegirGruposEmailFragment.GetEmails requestEmails = retrofit.create(ElegirGruposEmailFragment.GetEmails.class);
@@ -174,11 +171,9 @@ public class ElegirGruposEmailFragment extends Fragment {
                         List<Email> apiResponse = response.body();
                         emails = apiResponse;
                         try {
-                            Log.v("emails", emails.get(0).email);
                             GMailSender sender = new GMailSender("testemailsenderapp@gmail.com", "jmdpwgebudgzfiom", emails);
                             sender.execute();
                         } catch (Exception e) {
-                            Log.e("SendMail", e.getMessage(), e);
                         }
                     }
                     @Override
@@ -192,7 +187,6 @@ public class ElegirGruposEmailFragment extends Fragment {
                     }
                     else
                     {
-                        Log.v("AAAA", "entra");
                         break;
                     }
                 }

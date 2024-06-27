@@ -23,9 +23,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DownloadAmazonS3 extends AsyncTask {
-    private String ACCESS_ID = "AKIA55CI3RZ6URIWIJET";
-    private String SECRET_KEY = "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";
-    private String BUCKET_NAME = "mediafiles-csj";
+    private String ACCESS_ID = "";
+    private String SECRET_KEY = "";
+    private String BUCKET_NAME = "";
     private Context context;
     private String type;
 
@@ -57,7 +57,6 @@ public class DownloadAmazonS3 extends AsyncTask {
 
         if(type == "audio"){
             if(audioNames.length > 0){
-                Log.v("audio", "audio");
                 for (int i = 0; i < audioNames.length; i++){
                     try {
                         File file = new File(musicDirectory, audioNames[i]);
@@ -86,7 +85,6 @@ public class DownloadAmazonS3 extends AsyncTask {
             }
         } if (type == "foto"){
             if(fotoNames.length > 0){
-                Log.v("foto", "foto");
                 for (int i = 0; i < fotoNames.length; i++){
                     try {
                         File file = new File(fotoDirectory, fotoNames[i]);
@@ -115,7 +113,6 @@ public class DownloadAmazonS3 extends AsyncTask {
             }
         } if(type == "video"){
             if(videoNames.length > 0){
-                Log.v("video", "video");
                 for (int i = 0; i < videoNames.length; i++){
                     try {
                         File file = new File(videoDirectory, videoNames[i]);

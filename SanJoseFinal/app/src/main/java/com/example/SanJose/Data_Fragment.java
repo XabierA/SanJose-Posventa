@@ -123,8 +123,6 @@ public class Data_Fragment extends Fragment {
         anteriorBtn = getView().findViewById(R.id.btnAnterior_Docs);
         siguienteBtn = getView().findViewById(R.id.btnSiguiente_Docs);
 
-        Log.v("asd", revisandoInc+"");
-
         if (revisandoInc){
             audios =  viewModel.getAudios().getValue();
             imagenes = viewModel.getFotos().getValue();

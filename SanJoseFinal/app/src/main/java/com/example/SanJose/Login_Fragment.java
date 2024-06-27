@@ -109,7 +109,7 @@ public class Login_Fragment extends Fragment {
         }
 
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://eu-west-2.aws.data.mongodb-api.com/app/apisanjose-iciuj/endpoint/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("URL DE LA API")
                 .addConverterFactory(GsonConverterFactory.create()).build();
 
 

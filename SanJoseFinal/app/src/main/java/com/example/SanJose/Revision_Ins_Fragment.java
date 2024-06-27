@@ -230,9 +230,8 @@ public class Revision_Ins_Fragment extends Fragment implements FragmentCallBack 
         //plano = getView().findViewById(R.id.plano1et);
         incidencia = (Incidencia) getArguments().getSerializable("incidencia");
 
-        Log.v("LLLLLLLLLEEEEGAAAAAA", "LELEELELELELELELELLELELE");
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://eu-west-2.aws.data.mongodb-api.com/app/apisanjose-iciuj/endpoint/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("URL DE LA API")
                 .addConverterFactory(GsonConverterFactory.create()).build();
 
         GetNumIns requestPaciente = retrofit.create(GetNumIns.class);

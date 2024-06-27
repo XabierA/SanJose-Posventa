@@ -17,9 +17,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UploadAmazonS3 extends AsyncTask {
-    private String ACCESS_ID = "AKIA55CI3RZ6URIWIJET";
-    private String SECRET_KEY = "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";
-    private String BUCKET_NAME = "mediafiles-csj";
+    private String ACCESS_ID = "";
+    private String SECRET_KEY = "";
+    private String BUCKET_NAME = "";
 
     private String type;
 

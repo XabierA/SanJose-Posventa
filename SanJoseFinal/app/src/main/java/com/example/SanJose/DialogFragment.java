@@ -65,8 +65,6 @@ public class DialogFragment extends androidx.fragment.app.DialogFragment {
     }
 
     protected void sendEmail() {
-        Log.i("Send email", "");
-
         String[] TO = {"xabier.angulo@bexreal.com"};
         String[] CC = {"testemailsenderapp@gmail.com"};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
@@ -81,7 +79,6 @@ public class DialogFragment extends androidx.fragment.app.DialogFragment {
 
         try {
             startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-            Log.i("Finished sending email...", "");
         } catch (android.content.ActivityNotFoundException ex) {
             Toast.makeText(context,
                     "There is no email client installed.", Toast.LENGTH_SHORT).show();

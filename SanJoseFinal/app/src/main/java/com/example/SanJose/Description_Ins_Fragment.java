@@ -105,7 +105,6 @@ public class Description_Ins_Fragment extends Fragment {
         anteriorBtn = getView().findViewById(R.id.btnAnterior_Docs);
         siguienteBtn = getView().findViewById(R.id.btnSiguiente_Docs);
 
-        Log.v("test", revisandoInc+"");
 
         if (revisandoInc){
             etDescripcion.setText(inspeccionActual.descripcion);

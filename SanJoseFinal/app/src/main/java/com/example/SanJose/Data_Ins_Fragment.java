@@ -131,7 +131,6 @@ public class Data_Ins_Fragment extends Fragment {
         siguienteBtn.setText("REVISAR INSPECCION");
 
         if (revisandoInc){
-            Log.v("TEST", viewModel.getAudios().getValue().size()+"");
             audios =  viewModel.getAudios().getValue();
             imagenes = viewModel.getFotos().getValue();
             videos = viewModel.getVideos().getValue();
@@ -249,7 +248,6 @@ public class Data_Ins_Fragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (requestCode == RESULT_OK && resultCode == RESULT_OK) {
         }
-        Log.v("result", "result");
     }
 
     private void getMicrophonePermission(){

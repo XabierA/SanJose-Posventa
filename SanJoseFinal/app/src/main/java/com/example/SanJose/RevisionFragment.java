@@ -223,7 +223,7 @@ public class RevisionFragment extends Fragment implements FragmentCallBack {
         tvComplemento2 = getView().findViewById(R.id.rev_complemento2);
         //plano = getView().findViewById(R.id.plano1et);
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://eu-west-2.aws.data.mongodb-api.com/app/apisanjose-iciuj/endpoint/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("URL DE LA API")
                 .addConverterFactory(GsonConverterFactory.create()).build();
 
         GetNumInc requestPaciente = retrofit.create(GetNumInc.class);

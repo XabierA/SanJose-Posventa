@@ -136,7 +136,7 @@ public class CodigoProyectoFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (etCodigoProyecto.getText().toString().length() > 0) {
-                    Retrofit retrofit = new Retrofit.Builder().baseUrl("https://eu-west-2.aws.data.mongodb-api.com/app/apisanjose-iciuj/endpoint/")
+                    Retrofit retrofit = new Retrofit.Builder().baseUrl("URL A LA API")
                             .addConverterFactory(GsonConverterFactory.create()).build();
                     GetProyecto getProyecto = retrofit.create(GetProyecto.class);
 
@@ -146,7 +146,6 @@ public class CodigoProyectoFragment extends Fragment {
                         public void onResponse(Call<Proyecto> call, Response<Proyecto> response) {
                             if (response.body() != null){
                                 proyecto = response.body();
-                                Log.v("proyecto", proyecto._id);
                                 MainMenuFragment f = new MainMenuFragment();
                                 Bundle args = new Bundle();
                                 args.putSerializable("usuario", getArguments().getSerializable("usuario"));

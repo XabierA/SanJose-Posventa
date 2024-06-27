@@ -117,7 +117,7 @@ public class Incidencias_Fragment extends Fragment {
         disciplinas1.setDisciplinas(disciplinas);
         disciplinas1.setProyecto(proyecto._id);
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://eu-west-2.aws.data.mongodb-api.com/app/apisanjose-iciuj/endpoint/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("URL de la API")
                 .addConverterFactory(GsonConverterFactory.create()).build();
 
         RequestFilteredIncidencias requestAllIncidencias = retrofit.create(RequestFilteredIncidencias.class);

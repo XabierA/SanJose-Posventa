@@ -83,7 +83,7 @@ public class Incidencias_List_Fragment extends Fragment {
         if (getArguments().getSerializable("usuario") != null){
             usuario = (User) getArguments().getSerializable("usuario");
         }
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://eu-west-2.aws.data.mongodb-api.com/app/apisanjose-iciuj/endpoint/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("URL de la API")
                 .addConverterFactory(GsonConverterFactory.create()).build();
 
         RequestPaciente requestPaciente = retrofit.create(RequestPaciente.class);
